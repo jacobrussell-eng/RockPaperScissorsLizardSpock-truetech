@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>True Test - RPSLSp</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>TrueTech test - Rock/Paper/Scissors/Lizard/Spock!</h1>
+            <div id="options_bar">
+                <div style="height: auto;">
+                    <label for="last_toggle">Last Choice CPU:</label>
+                    <input type="checkbox" name="last_choice" id="last_toggle">
+                </div>
+                <p><a href="index.html">Play Standard</a></p>
+            </div>
+        </header>
+        <main>
+            <div id="cpu_container">
+                <h2>CPU's Choice:</h2>
+                <div id="cpu_play"><img src="" alt="placeholder" style="display: none;" id="cpu_img"></div>
+            </div>
+            <div id="player_container">
+                <h2>Choose your move:</h2>
+                <div id="button_container">
+                    <button class="player_button"><img src="assets/rock.jpg" alt="rock" data-value="r"></button>
+                    <button class="player_button"><img src="assets/paper.jpg" alt="paper" data-value="p"></button>
+                    <button class="player_button"><img src="assets/scissors.jpg" alt="scissors" data-value="s"></button>
+                    <button class="player_button"><img src="assets/lizard.jpg" alt="lizard" data-value="l"></button>
+                    <button class="player_button"><img src="assets/spock.jpg" alt="spock" data-value="sp"></button>
+                </div>
+                <h2 id="winstate"></h2>
+                <p><a href="assets/cheatsheet.jpg" target="_blank">Open Cheatsheet</a></p>
+            </div>
+        </main>
+        <script src="rps.js"></script>
+    </body>
+</html>
